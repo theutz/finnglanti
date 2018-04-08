@@ -26,7 +26,7 @@ const TemplateWrapper = ({ children, data }) => {
         />
       </Helmet>
       <Header title={title} description={description} />
-      <div>{children()}</div>
+      <div className="container">{children()}</div>
     </div>
   )
 }
