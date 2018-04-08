@@ -10,6 +10,9 @@ const Header = ({ title }) => (
     <div className="container">
       <div className="navbar-brand">
         <Link exact className="navbar-item" to="/">
+          <span className="icon">
+            <i className="fas fa-map-signs" />
+          </span>
           {title}
         </Link>
       </div>
