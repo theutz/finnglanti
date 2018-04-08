@@ -16,7 +16,7 @@ const TemplateWrapper = ({ children, data }) => {
           { name: 'keywords', content: keywords.join(', ') },
         ]}
       />
-      <Header />
+      <Header title={title} description={description} />
       <div>{children()}</div>
     </div>
   )
