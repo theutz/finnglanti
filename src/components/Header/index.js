@@ -1,12 +1,28 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import GatsbyLink from 'gatsby-link'
+
+const Link = ({ activeClassName, ...props }) => (
+  <GatsbyLink activeClassName={activeClassName || 'is-active'} {...props} />
+)
 
 const Header = ({ title }) => (
-  <div>
-    <div>
-      <h1>
-        <Link to="/">{title}</Link>
-      </h1>
+  <div className="navbar is-primary">
+    <div className="container">
+      <div className="navbar-brand">
+        <Link exact className="navbar-item" to="/">
+          <span className="icon">
+            <i className="fas fa-map-signs" />
+          </span>
+          {title}
+        </Link>
+      </div>
+      <div className="navbar-menu">
+        <div className="navbar-end">
+          <Link className="navbar-item" to="/flash-cards">
+            Flash Cards
+          </Link>
+        </div>
+      </div>
     </div>
   </div>
 )
