@@ -4,5 +4,5 @@ module.exports = {
     description: 'Finnish for English speakers',
     keywords: ['finnish', 'english', 'language']
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-react-next`],
 };
